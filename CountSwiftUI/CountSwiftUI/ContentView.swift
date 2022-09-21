@@ -8,20 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var count: Int = 0
+    @ObservedObject var countHook: CountHookObject = .init()
 
     var body: some View {
         VStack(alignment: .center) {
-            Text(String(count)).font(.largeTitle).fontWeight(.semibold)
+            Text(String(countHook.count)).font(.largeTitle).fontWeight(.semibold)
             VStack {
                 LongButton("Plus") {
-                    count = count + 1
+                    countHook.increment()
                 }
                 LongButton("Minus") {
-                    count = count - 1
+                    countHook.decrement()
                 }
                 LongButton("Reset", role: .destructive) {
-                    count = 0
+                    countHook.reset()
                 }
             }
             .buttonStyle(.borderedProminent)
@@ -31,7 +31,11 @@ struct ContentView: View {
         }
     }
 
-    func LongButton(_ text: String, role: ButtonRole? = nil, action: @escaping ()->Void) -> some View {
+    private func LongButton(
+        _ text: String,
+        role: ButtonRole? = nil,
+        action: @escaping ()->Void
+    ) -> some View {
         Button(role: role, action: action) {
             Text(text)
                 .font(.body)

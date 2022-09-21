@@ -11,6 +11,7 @@
 		43C663852785616400EC5973 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C663842785616400EC5973 /* ContentView.swift */; };
 		43C663872785616700EC5973 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43C663862785616700EC5973 /* Assets.xcassets */; };
 		43C6638A2785616700EC5973 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43C663892785616700EC5973 /* Preview Assets.xcassets */; };
+		43E57A8228DAE1CA0020CE57 /* CountHookObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E57A8128DAE1CA0020CE57 /* CountHookObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		43C663842785616400EC5973 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		43C663862785616700EC5973 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43C663892785616700EC5973 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		43E57A8128DAE1CA0020CE57 /* CountHookObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountHookObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				43C663822785616400EC5973 /* CountSwiftUIApp.swift */,
 				43C663842785616400EC5973 /* ContentView.swift */,
+				43E57A8128DAE1CA0020CE57 /* CountHookObject.swift */,
 				43C663862785616700EC5973 /* Assets.xcassets */,
 				43C663882785616700EC5973 /* Preview Content */,
 			);
@@ -139,6 +142,7 @@
 			files = (
 				43C663852785616400EC5973 /* ContentView.swift in Sources */,
 				43C663832785616400EC5973 /* CountSwiftUIApp.swift in Sources */,
+				43E57A8228DAE1CA0020CE57 /* CountHookObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
