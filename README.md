@@ -12,6 +12,7 @@ Web を含めて、宣言型と呼ばれるフレームワークで同じよう�
 |     Flutter      | [count_flutter](count_flutter) |
 |     Next.js      |  [count-nextjs](count-nextjs)  |
 |     Nuxt.js      |  [count-nuxtjs](count-nuxtjs)  |
+|    Angular.js    | [count-angular](count-angular) |
 
 ## 注意点
 
