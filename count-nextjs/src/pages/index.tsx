@@ -1,10 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { useState } from "react";
-import styles from "../styles/Home.module.css";
+import { useCounter } from "hooks/useCounter";
+import styles from "styles/Home.module.css";
 
 const Home: NextPage = () => {
-  const [count, setCount] = useState(0);
+  const { count, increment, decrement, reset } = useCounter();
 
   return (
     <div className={styles.container}>
@@ -18,21 +18,15 @@ const Home: NextPage = () => {
         <h1 className={styles.title}>{count}</h1>
 
         <div className={styles.grid}>
-          <button
-            className={styles.button}
-            onClick={() => setCount(() => count + 1)}
-          >
+          <button className={styles.button} onClick={increment}>
             Plus
           </button>
-          <button
-            className={styles.button}
-            onClick={() => setCount(() => count - 1)}
-          >
+          <button className={styles.button} onClick={decrement}>
             Minus
           </button>
           <button
             className={`${styles.button} ${styles.destructive}`}
-            onClick={() => setCount(0)}
+            onClick={reset}
           >
             Reset
           </button>
